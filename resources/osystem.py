@@ -1,7 +1,7 @@
 import os
 from random import choice
 
-class Utils:
+class OSystem:
 
     def handle_dir(self,path='.aws'):
         ''' create a dir if not exit'''

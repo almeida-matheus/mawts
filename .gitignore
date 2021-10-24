@@ -1,4 +1,5 @@
 env
 aws.sqlite3
+mawts.sqlite3
 .vscode
 __pycache__
