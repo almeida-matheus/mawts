@@ -4,8 +4,9 @@
 
 - [x] input credentials in db
 - [ ] encrypt credentials in db
-- [ ] list profiles in config
+- [x] list profiles in config
 - [ ] list who am i - mfa, keys, expire days, etc
+- [ ] assume role
 - [ ] export credentials in shell - default
 - [ ] export credentials in credentials file
 - [ ] rotate credentials
