@@ -28,8 +28,6 @@ class Aws:
             print(f'Error: Invalid Credentials')
 
     def get_profiles(self):
-        # session = boto3.Session().available_profiles
-
         try:
             session = boto3.Session(
                 aws_access_key_id=self.access_key,
@@ -40,3 +38,11 @@ class Aws:
                 print(f'{i+1}: {profile}')
         except Exception as e:
             print(f'Error: Invalid Credentials')
+    
+    def assume_role(self,profile):
+        boto3.setup_default_session(profile_name=profile)
+        client = boto3.client('sts')
+        response = client.assume_role(
+            RoleArn='string',
+            RoleSessionName='string'
+        )

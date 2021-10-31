@@ -54,10 +54,10 @@ if __name__ == '__main__':
     parser.add_argument('--rotate','-r', action='store_true', help='Rotate your credentials keys')
     args = parser.parse_args()
 
-    arg_names = ['main', 'c1']
+    arg_names = ['main', 'c']
     d_args = dict(zip(arg_names, sys.argv))
 
-    if d_args['c1'] == '--help' or d_args['c1'] == '-h':
+    if '--help' in d_args.values() or '-h' in d_args.values():
         r = resources.Help().show()
         exit()
 
@@ -76,8 +76,8 @@ if __name__ == '__main__':
         inst_aws.get_profiles()
         parser.exit()
     
-    # if d_args['c1']:
-    #     inst_aws.assume_role()
+    # if d_args['c']:
+    #     inst_aws.assume_role(d_args['c'])
     #     exit()
 
     # inst_db.close_connect()

@@ -10,9 +10,8 @@ class Color:
 class Help:
     def show(self):
         print('')
-        print('MAWTS'.center(70))
         print(' '+'—' * 68 + ' ')
-        print('│ CLI to manage AWS credentials ease and automate tasks'.ljust(68), '│')
+        print('│ CLI to easily manage AWS credentials and automate tasks'.ljust(68), '│')
         print(' '+'—' * 68 + ' ')
         print('│ positional'.ljust(15), ' '.ljust(52), '│')
         # print('│'.ljust(68), '│')
@@ -28,4 +27,3 @@ class Help:
         print('│ -v, --version'.ljust(15), '│ Show mawts version '.ljust(52), '│')
         print('│ -w, --whoami'.ljust(15), '│ Show AWS user info '.ljust(52), '│')
         print(' '+'—' * 68 + ' ')
-        print('0.0.1\n'.rjust(70))
